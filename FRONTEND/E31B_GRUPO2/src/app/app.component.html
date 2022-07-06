@@ -1,0 +1,43 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
+    <a class="navbar-brand" routerLink="home">CLARO PMO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="home">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="nosotros">¿Quiénes somos?</a>
+        </li>
+        <li  *ngIf="estaEnSesion" class="nav-item active">
+          <a class="nav-link" routerLink="dashboard">Dashboard <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="factibilidad">Factibilidad <span class="sr-only"></span></a>
+        </li> 
+      </ul>  
+
+      <div class="btn-group">
+        <a *ngIf="!estaEnSesion" type="button" class="btn btn-danger" routerLink="login">Intranet</a>
+        <button *ngIf="estaEnSesion" type="button" class="btn btn-danger">Hola Mercedes</button>
+        <button *ngIf="estaEnSesion" type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-lg-right">
+          <a class="dropdown-item" routerLink="login">Mi Perfil</a>
+          <a class="dropdown-item" routerLink="#">Configuración</a>
+          <div class="dropdown-divider"></div>
+          <a (click)="cerrarSesion()" class="dropdown-item">Cerrar Sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="container-fluid pex">
+  <router-outlet></router-outlet>
+</main>

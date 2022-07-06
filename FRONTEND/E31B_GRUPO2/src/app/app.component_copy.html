@@ -1,0 +1,55 @@
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav"
+  style="opacity: 1;background-color: rgba(14, 14, 13, 0.973);">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" routerLink="home" style="color: rgb(177, 19, 8); width: 60px;">CLARO PMO</a>
+    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive"
+      type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation" style="background-color: rgba(13, 13, 14, 0.973);">
+      <i class="fa fa-bars" style="color: rgba(255,255,255,0.75);">
+      </i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+      <ul class="nav navbar-nav ml-auto text-uppercase">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active js-scroll-trigger" routerLink="home" style="color: rgb(242, 246, 247);">Home</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active js-scroll-trigger" routerLink="proyectos"
+            style="color: rgb(242, 246, 247);">Proyectos</a>
+          <ul>
+            <li> <a (click)="irBCP()">bcp</a></li>
+            <li> <a href="">BBVA</a></li>
+            <li> <a href="">Servicios Gestionados FIREWALL</a></li>
+            <li> <a href="">Banco de la Nacion</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active js-scroll-trigger" routerLink="factibilidad"
+            style="color: rgb(242, 246, 247);">Factibilidad</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active js-scroll-trigger" routerLink="comercial"
+            style="color: rgb(242, 246, 247);">Comercial</a>
+          <ul>
+            <li> <a href="">editha</a></li>
+            <li> <a href="">contrato marco</a></li>
+            <li> <a href="">anexos</a></li>
+            <li> <a href="">TODOS</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active js-scroll-trigger" routerLink="nosotros" style="color: rgb(242, 246, 247);">Nosotros</a>
+        </li>
+      </ul>
+
+      <a class="btn btn-primary text-black-50 border-dark" role="button" routerLink="login"
+        style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(242, 246, 247);border:none;">Iniciar
+        Sesion</a>
+    </div>
+  </div>
+</nav>
+
+<section style="min-height: 650px; padding-top: 160px;">
+  <router-outlet></router-outlet>
+</section>

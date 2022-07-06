@@ -1,0 +1,127 @@
+<div class="col-2" class="container" style="padding-top:5px;">
+
+    <div class="row" >
+         
+        <div class="col-3">
+          
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(177, 26, 26, 0.973); padding-top: 500 px; height: 30px; width: 250px; text-justify: auto;">
+                <a  role="button" aria-haspopup="true" aria-expanded="false" style="color: rgb(8, 8, 8); padding-left: 40px;" >MENÚ</a>     
+            </nav>
+
+             <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 500px; width: 250px; text-justify: auto;"> 
+                <div >
+                    <a (click)="cambiarImagenes(1)" class="dropdown-item" >PLANTA INSTALADA</a>
+                    <a (click)="irAnodosDeLaRed()" style="padding-left: 40px;" class="dropdown-item" >NODOS</a>
+                    <a (click)="irPOP()" style="padding-left: 40px;" class="dropdown-item" >POP</a>                                           
+                                        
+                    <a class="dropdown-item" (click)="cambiarImagenes(2)"> EQUIPAMIENTO </a>
+                    <a (click)="irPEXT()" style="padding-left: 40px; " class="dropdown-item" >PEXT</a>
+                    <a (click)="irPOP()" style="padding-left: 40px; " class="dropdown-item" >PINT</a>
+                    
+                    <a class="dropdown-item" (click)="cambiarImagenes(3)"> COBERTURA </a>
+                    <a (click)="irLTE()" style="padding-left: 40px; " class="dropdown-item" >LTE</a>
+                    <a (click)="irSATELITAL()" style="padding-left: 40px; " class="dropdown-item" >SATELITAL</a>                    
+                </div>                
+            </nav>
+            
+        </div> 
+
+        <div *ngIf="sub_menu==null" class="col-9" >
+
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 550px; width: 800px; text-justify: auto;"> 
+                <div style="padding-top: 10; text-align:center;">
+                    <h2>PLANTA INSTALADA</h2>
+                    <img src="./assets/img/ImgFactibilidad/cables-submarinos-mapa.jpg" width="520" height="200" style="border:-10;">  
+                    <p>Planta 1</p>             
+                </div>               
+                <div style="padding-top: 70; text-align: center;">
+                    <img src="./assets/img/ImgFactibilidad/planta 2.jpg" width="520" height="200" style="border:-10;">  
+                    <p>Planta 2</p>                
+                </div>  
+            </nav>     
+
+        </div>   
+
+        <div *ngIf="sub_menu==1" class="col-8" >          
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 550px; width: 800px; text-justify: auto;"> 
+                <div style="padding-top: 10; text-align:center;">
+                    <h2>PLANTA INSTALADA</h2>
+                    <img src="./assets/img/ImgFactibilidad/cables-submarinos-mapa.jpg" width="520" height="200" style="border:-10;">  
+                    <p>Planta 1</p>             
+                </div>               
+                <div style="padding-top: 70; text-align: center;">
+                    <img src="./assets/img/ImgFactibilidad/planta 2.jpg" width="520" height="200" style="border:-10;">  
+                    <p>Planta 2</p>                
+                </div>  
+            </nav>          
+        </div>   
+
+        <div  *ngIf="sub_menu==2"class="col-8" >           >
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 550px; width: 800px; text-justify: auto;"> 
+                <div style="padding-top: 10; text-align:center;">
+                    <h2>EQUIPAMENTO</h2>
+                    <img src="./assets/img/ImgFactibilidad/Router.webp" width="500" height="200" style="border:-10;">  
+                    <p>PINT</p>             
+                </div>               
+                <div style="padding-top: 30PX; text-align: center;">
+                    <img src="./assets/img/ImgFactibilidad/Pext.webp" width="500" height="200" style="border:-10;">  
+                    <p>PEXT</p>                
+                </div>  
+            </nav>          
+        </div>   
+
+        <div  *ngIf="sub_menu==3"class="col-8" >            
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 550px; width: 800px; text-justify: auto;"> 
+                <div style="padding-top: 10; text-align:center;">
+                    <h1>COBERTURA</h1>
+                    <img src="./assets/img/ImgFactibilidad/lte.jpg" width="500" height="200" style="border:-10;">  
+                    <p>RED LTE</p>             
+                </div>               
+                <div style="padding-top: 20px; text-align: center;">
+                    <img src="./assets/img/ImgFactibilidad/satelital.jpg" width="500" height="200" style="border:-10;">  
+                    <p>RED SATELITAL</p>                
+                </div>  
+            </nav>        
+        </div>          
+    </div>
+
+    <hr class="featurette-divider">
+
+    <section class="mod__banners"> 
+        <div class="container"> 
+         <div class="cont-banner js_slider"> 
+          <article> 
+           <a href="https://capacitateparaelempleo.org/" rel="noopener noreferrer" target="_blank"> <img src="assets/img/home/Carlos Slim 1.png" alt="Capacitaci&oacute;n gratuita en linea" /> </a> 
+          </article> 
+         </div> 
+        </div> 
+       </section> 
+      
+      <hr class="featurette-divider">
+
+      <dl class="g-12 box__rs"> 
+        <dt>
+         Redes Sociales
+        </dt> 
+        <dd>
+         <a href="https://www.facebook.com/ClaroCol/" target="_blank" class="bt__fb" aria-label="Facebook Claro col" rel="noopener noreferrer"></a>
+        </dd>
+        <dd>
+         <a href="https://twitter.com/ClaroColombia" target="_blank" class="bt__tw" aria-label="Twitter Claro col" rel="noopener noreferrer"></a>
+        </dd>
+        <dd>
+         <a href="https://twitter.com/claroteayuda" target="_blank" class="bt__tw" aria-label="Twitter Claro col te ayuda" rel="noopener noreferrer"></a>
+        </dd>
+        <dd>
+         <a href="https://www.youtube.com/user/ClaroColombia" target="_blank" class="bt__yt" aria-label="YouTube Claro col" rel="noopener noreferrer"></a>
+        </dd>
+        <dd>
+         <a href="https://www.linkedin.com/company/claro-colombia" target="_blank" class="bt__linked" aria-label="LinkedIn Claro col" rel="noopener noreferrer"></a>
+        </dd> 
+       </dl>  
+
+</div>
+
+
+
+

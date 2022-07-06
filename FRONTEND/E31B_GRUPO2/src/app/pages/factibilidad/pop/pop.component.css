@@ -1,0 +1,9 @@
+    .centrar-horizontalmente {
+    display: flex;
+    justify-content: center;
+    }
+    .centrar-verticalmente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
