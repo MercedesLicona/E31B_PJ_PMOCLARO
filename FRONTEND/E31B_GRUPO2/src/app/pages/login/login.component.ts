@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 
 export class LoginComponent implements OnInit {
   
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,
+    private readonly userService:UserService) { }
 
   userName: any;  
   loginForm = this.fb.group({
@@ -19,18 +21,27 @@ export class LoginComponent implements OnInit {
   });
 
   iniciarSesion(){
-    let x =0;
-    if(this.loginForm.get('user')?.value=="admin"){
-      if(this.loginForm.get('password')?.value=="123456"){
-        x=1;
-      }
+    if(this.loginForm.valid){
+      this.userService.__getLogin(this.loginForm.value).subscribe((rest:any)=>{
+        if(rest.issuccess){
+          console.log(rest.data);
+        }
+      });
     }
-    if(x>0){
-      sessionStorage.setItem('token', 'Mercedes');
-      window.location.href="/dashboard";
-    }else{
-      sessionStorage.removeItem('token');
-    }
+
+
+    // let x =0;
+    // if(this.loginForm.get('user')?.value=="admin"){
+    //   if(this.loginForm.get('password')?.value=="123456"){
+    //     x=1;
+    //   }
+    // }
+    // if(x>0){
+    //   sessionStorage.setItem('token', 'Mercedes');
+    //   window.location.href="/dashboard";
+    // }else{
+    //   sessionStorage.removeItem('token');
+    // }
   }
 
   ngOnInit(): void {
@@ -39,19 +50,3 @@ export class LoginComponent implements OnInit {
 }
 
 
-
-// export class Usuario {
-//   id: number;
-//   name: string;
-//   password: string;
-//   fullName: string;
-
-//   constructor(user:Usuario) {
-//       {
-//         this.id = user.id;
-//         this.name = user.name || '';
-//         this.password = user.password || '';
-//         this.fullName = user.fullName || '';
-//       }
-//   }
-// }
