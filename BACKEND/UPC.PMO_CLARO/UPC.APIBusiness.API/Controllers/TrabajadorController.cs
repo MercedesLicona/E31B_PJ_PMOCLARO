@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using UPC.APIBusiness.API.Model;
 using UPC.APIBusiness.DBContext.Interface;
 using UPC.APIBusiness.DBContext.Repository;
 
@@ -11,20 +12,20 @@ namespace UPC.APIBusiness.API.Controllers
     public class TrabajadorController : Controller
     {
         ITrabajadorRepository _repository;
-        public TrabajadorController()
+        public TrabajadorController(ITrabajadorRepository repository)
         {
-            _repository = new TrabajadorRepository();
+            _repository = repository;
         }
 
         [Produces("application/json")]
         [AllowAnonymous]
-        [HttpGet]
+        [HttpPost]
         [Route("GetLogin")]
-        public ActionResult Login(string email)
+        public ActionResult Login(LoginModel model)
         {
 
-            //var resultado = _repository.Login(email, "");
-            return Json("");
+            var resultado = _repository.Login(model.User, model.Password);
+            return Json(resultado);
         }
     }
 }

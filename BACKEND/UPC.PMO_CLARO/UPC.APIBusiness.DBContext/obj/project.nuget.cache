@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lIlOHqgH+LNqC5ud3GQcETZrC/sAFZYaf6AlXWngvDb+lPzmS+UxXm7KEyN2Q4I92BP+XvUcfDltBQFianNV1A==",
+  "dgSpecHash": "+/x4/e7c989H+ptiV59eVQylc6vAQlCb0aF/XeGS5rdhs0FYFSWfbk5PBJOuVKKwTicSIGi6HO2W+qfe2oxhgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj",
+  "projectFilePath": "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alegu\\.nuget\\packages\\dapper\\2.0.30\\dapper.2.0.30.nupkg.sha512",
     "C:\\Users\\alegu\\.nuget\\packages\\microsoft.extensions.configuration\\2.2.0\\microsoft.extensions.configuration.2.2.0.nupkg.sha512",
