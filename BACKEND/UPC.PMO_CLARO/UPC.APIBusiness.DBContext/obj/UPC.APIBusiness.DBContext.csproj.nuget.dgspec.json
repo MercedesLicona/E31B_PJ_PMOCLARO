@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj": {}
+    "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj": {
+    "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj",
+        "projectUniqueName": "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj",
         "projectName": "UPC.APIBusiness.DBContext",
-        "projectPath": "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj",
+        "projectPath": "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\UPC.APIBusiness.DBContext.csproj",
         "packagesPath": "C:\\Users\\alegu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\obj\\",
+        "outputPath": "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBContext\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {
-                "projectPath": "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj"
+              "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {
+                "projectPath": "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {
+    "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
+        "projectUniqueName": "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
         "projectName": "UPC.APIBusiness.DBEntity",
-        "projectPath": "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
+        "projectPath": "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\UPC.APIBusiness.DBEntity.csproj",
         "packagesPath": "C:\\Users\\alegu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alegu\\Desktop\\web-m\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\obj\\",
+        "outputPath": "C:\\Users\\alegu\\Desktop\\web-m\\GIT\\BACKEND\\UPC.PMO_CLARO\\UPC.APIBusiness.DBEntity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

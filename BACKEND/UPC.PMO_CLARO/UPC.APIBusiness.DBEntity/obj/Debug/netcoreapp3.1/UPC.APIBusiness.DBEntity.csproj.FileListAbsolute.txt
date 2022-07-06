@@ -18,3 +18,13 @@ C:\Users\alegu\Desktop\web-m\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\ne
 C:\Users\alegu\Desktop\web-m\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.csproj.CoreCompileInputs.cache
 C:\Users\alegu\Desktop\web-m\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
 C:\Users\alegu\Desktop\web-m\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.deps.json
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.csproj.AssemblyReference.cache
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.AssemblyInfoInputs.cache
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.AssemblyInfo.cs
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.csproj.CoreCompileInputs.cache
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+C:\Users\alegu\Desktop\web-m\GIT\BACKEND\UPC.PMO_CLARO\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
