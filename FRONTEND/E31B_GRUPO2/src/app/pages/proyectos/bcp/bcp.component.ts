@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ConsultasService } from 'src/app/services/consultas.service';
+import { ProyectosService } from 'src/app/services/proyectos.service';
 
 @Component({
   selector: 'app-bcp',
@@ -8,44 +11,29 @@ import { Router } from '@angular/router';
 })
 export class BcpComponent implements OnInit {
   sub_menu: any;
-  isSgaShown: boolean = true;
-  isSotShown: boolean = false;
+  servicio: any[] = [];
 
-  constructor(private readonly enrutador: Router) {
 
-   }
+   constructor(private readonly enrutador: Router,
+    private fb:FormBuilder,
+    private readonly proyectoServicio:ProyectosService,
+    private readonly consultaServicio:ConsultasService) { }
+
    irBCP(){
     this.enrutador.navigate(["bcp"])
    }
 
   
-   showSga(){
-    this.isSgaShown = true;
-    this.isSotShown = false;
+   cargarListado(){
+    this.proyectoServicio.__getServiciosPorProyecto("BCP").subscribe((rest:any)=>{
+      if(rest.issuccess){
+        this.servicio=rest.data;
+      }
+    })
    }
-   showSot(){
-    this.isSotShown = true;
-    this.isSgaShown = false;
-   }
-  //  tabPanel(flag: boolean){
-  //   if(flag){
-  //     this.tabSga = true;
-  //     this.tabSot = false;
-  //     console.log(flag);
-  //   }else{
-  //     this.tabSga = false;
-  //     this.tabSot = true;
-  //     console.log(flag);
-  //   }  
-  //  }
 
 
   ngOnInit(): void {
-
- 
- 
-
-
+    this.cargarListado();
   }
-
 }
