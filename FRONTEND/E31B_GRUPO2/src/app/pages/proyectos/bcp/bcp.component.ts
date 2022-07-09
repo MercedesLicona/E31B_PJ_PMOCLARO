@@ -13,7 +13,6 @@ export class BcpComponent implements OnInit {
   sub_menu: any;
   servicioList: any[] = [];
 
-
    constructor(private readonly enrutador: Router,
     private fb:FormBuilder,
     private readonly proyectoServicio:ProyectosService,
@@ -24,17 +23,17 @@ export class BcpComponent implements OnInit {
    }
 
   
-   cargarListado(){
-    this.proyectoServicio.__getServiciosPorProyecto("BCP").subscribe((rest:any)=>{
+   cargarListado(cliente:string){
+    this.proyectoServicio.__getServiciosPorProyecto(cliente).subscribe((rest:any)=>{
       if(rest.issuccess){
-        this.servicioList=rest.data;
-        console.log(rest.data);
+        this.servicioList=rest.data;    
+       // console.log(this.servicioList);        
       }
     })
    }
 
 
   ngOnInit(): void {
-    this.cargarListado();
+    this.cargarListado("BCP");
   }
 }

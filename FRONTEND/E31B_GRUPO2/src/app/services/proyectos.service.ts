@@ -8,11 +8,11 @@ export class ProyectosService {
 
   constructor(private readonly http: HttpClient) { }
 
-  __getServiciosPorProyecto(proyecto:string){
-    return this.http.get<any>('http://localhost:5000/api/Servicio/ObtenerServicios?proyecto='+proyecto);
+  __getServiciosPorProyecto(data:any){
+    return this.http.get<any>('https://localhost:5001/api/Servicio/ObtenerServiciosPorCliente?cliente='+data);
   }
   
-  __registrarServicio(data:any){
+  __registrarServicio(data:any[]){
     return this.http.post<any>('http://localhost:5000/api/Servicio/Registrar',data);
   }
 }

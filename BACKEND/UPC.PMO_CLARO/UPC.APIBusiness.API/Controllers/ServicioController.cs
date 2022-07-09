@@ -38,10 +38,10 @@ namespace UPC.APIBusiness.API.Controllers
         [Produces("application/json")]
         [AllowAnonymous]
         [HttpGet]
-        [Route("ObtenerServicios")]
-        public ActionResult ObtenerServicios(string proyecto)
+        [Route("ObtenerServiciosPorCliente")]
+        public ActionResult ObtenerServiciosPorCliente(string cliente)
         {
-            var resultado = _repository.ObtenerServicioPorProyecto(proyecto);
+            var resultado = _repository.ObtenerServicioPorProyecto(cliente);
             return Json(resultado);
         }
     }

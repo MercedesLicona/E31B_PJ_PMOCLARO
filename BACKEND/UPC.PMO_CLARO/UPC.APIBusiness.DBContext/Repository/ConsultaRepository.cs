@@ -24,18 +24,19 @@ namespace UPC.APIBusiness.DBContext.Repository
                     var parametros = new DynamicParameters();
                     parametros.Add(name: "@opcion", value: opcion);
 
-                    var objeto = conexionSql.Query<ConsultaEntity>(
+                    var entityList = new List<ConsultaEntity>();
+                    entityList = conexionSql.Query<ConsultaEntity>(
                            sql: procedimiento,
                            param: parametros,
                            commandType: CommandType.StoredProcedure
-                       );
+                       ).ToList();
 
-                    if (objeto != null && objeto.Count()>0)
+                    if (entityList != null && entityList.Count()>0)
                     {
                         response.issuccess = true; 
                         response.errorcode = "0000";
                         response.errormessage = string.Empty;
-                        response.data = objeto.ToList();
+                        response.data = entityList.ToList();
                     }
                     else
                     {
