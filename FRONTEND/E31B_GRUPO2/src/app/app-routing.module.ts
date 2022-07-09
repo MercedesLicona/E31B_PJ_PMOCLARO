@@ -16,17 +16,6 @@ import { BcpComponent } from "./pages/proyectos/bcp/bcp.component";
 import { BbvaComponent } from "./pages/proyectos/bbva/bbva.component";
 import { BancoNacionComponent } from "./pages/proyectos/banco-nacion/banco-nacion.component";
 
-import { DashboardComponent } from "./pages/dashboard/dashboard.component";
-import { RegistroComponent } from "./pages/bcp/registro/registro.component";
-import { SgaComponent } from "./pages/bcp/sga/sga.component";
-import { SotComponent } from "./pages/bcp/sot/sot.component";
-import { RegistroBBVAComponent } from "./pages/bbva/registro-bbva/registro-bbva.component";
-import { SgaBbvaComponent } from "./pages/bbva/sga-bbva/sga-bbva.component";
-import { SotBbvaComponent } from "./pages/bbva/sot-bbva/sot-bbva.component";
-import { RegistroBnComponent } from "./pages/bancodelanacion/registro-bn/registro-bn.component";
-import { SgaBnComponent } from "./pages/bancodelanacion/sga-bn/sga-bn.component";
-import { SotBnComponent } from "./pages/bancodelanacion/sot-bn/sot-bn.component";
-
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -47,20 +36,6 @@ const routes: Routes = [
     { path: "lte" , component:LteComponent},
     { path: "pext" , component:PextComponent},
     { path: "satelital" , component:SatelitalComponent},
-
-    {path: "registro" , component:RegistroComponent},
-    {path: "sga" , component:SgaComponent},
-    {path: "sot" , component:SotComponent},
-
-    {path: "registroBBVA" , component:RegistroBBVAComponent},
-    {path: "sgaBBVA" , component:SgaBbvaComponent},
-    {path: "sotBBVA" , component:SotBbvaComponent},
-
-    {path: "registroBN" , component:RegistroBnComponent},
-    {path: "sgaBN" , component:SgaBnComponent},
-    {path: "sotBN" , component:SotBnComponent},
-
-    { path: "dashboard" , component:DashboardComponent}
 
 ];
 

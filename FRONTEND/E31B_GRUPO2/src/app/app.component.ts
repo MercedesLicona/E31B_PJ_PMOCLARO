@@ -10,6 +10,7 @@ export class AppComponent  implements OnInit{
   title = 'E31B';
   sub_menu: any;
   estaEnSesion=false;
+  _displayed= false;
 
   constructor(private readonly enrutador:Router){
   }
@@ -23,6 +24,7 @@ export class AppComponent  implements OnInit{
   }
 
   ngOnInit(): void{
+    this._displayed=false;
     let token = sessionStorage.getItem('token');
     if(token!=null){
       this.estaEnSesion=true;
@@ -30,4 +32,13 @@ export class AppComponent  implements OnInit{
       this.estaEnSesion=false;
     }
   }
+
+
+
+changeStatus(event:Event){
+    const isChecked = (<HTMLInputElement>event.target).checked;
+    this._displayed=isChecked;
+    // alert(isChecked);
+}
+
 }

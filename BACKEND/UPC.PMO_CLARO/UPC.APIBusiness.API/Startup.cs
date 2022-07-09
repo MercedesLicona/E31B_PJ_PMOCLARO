@@ -113,8 +113,9 @@ namespace UPC.APIBusiness.API
 
 
             //TODO: Registrar las interfaces para Inyección de Dependencias
-
             services.AddTransient<ITrabajadorRepository, TrabajadorRepository>();
+            services.AddTransient<IServicioRepository, ServicioRepository>();
+            services.AddTransient<IConsultaRepository, ConsultaRepository>();
 
             // ----------------------------------------------------------------
             services.AddTransient<HttpClientAuthorizationDelegatingHandler>();
