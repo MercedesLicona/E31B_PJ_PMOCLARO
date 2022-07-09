@@ -11,7 +11,7 @@ import { ProyectosService } from 'src/app/services/proyectos.service';
 })
 export class BcpComponent implements OnInit {
   sub_menu: any;
-  servicio: any[] = [];
+  servicioList: any[] = [];
 
 
    constructor(private readonly enrutador: Router,
@@ -27,7 +27,8 @@ export class BcpComponent implements OnInit {
    cargarListado(){
     this.proyectoServicio.__getServiciosPorProyecto("BCP").subscribe((rest:any)=>{
       if(rest.issuccess){
-        this.servicio=rest.data;
+        this.servicioList=rest.data;
+        console.log(rest.data);
       }
     })
    }
