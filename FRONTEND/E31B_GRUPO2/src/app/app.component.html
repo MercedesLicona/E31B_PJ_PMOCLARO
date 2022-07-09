@@ -14,9 +14,9 @@
         <li class="nav-item active">
           <a class="nav-link" routerLink="nosotros">¿Quiénes somos?</a>
         </li>
-        <li  *ngIf="estaEnSesion" class="nav-item active">
+        <!-- <li  *ngIf="estaEnSesion" class="nav-item active">
           <a class="nav-link" routerLink="dashboard">Dashboard <span class="sr-only"></span></a>
-        </li>
+        </li> -->
         <li class="nav-item active">
           <a class="nav-link" routerLink="factibilidad">Factibilidad <span class="sr-only"></span></a>
         </li> 
@@ -38,6 +38,48 @@
     </div>
   </nav>
 </header>
-<main class="container-fluid pex">
+<label>
+  <input type="checkbox" (change)="changeStatus($event)">
+  <div class="toggle">
+    <span class="top_line common"></span>
+    <span class="middle_line common"></span>
+    <span class="bottom_line common"></span>
+  </div>
+<div class="slide">
+  <h1>PMO</h1>
+  <hr>
+  <ul class="_ul">
+    <li class="_li">
+      <a class="_a" routerLink="home"><i class="fa-solid fa-house"></i>Home </a>
+    </li>
+    <li class="_li">
+      <a class="_a" routerLink="nosotros"><i class="fa-solid fa-address-card"></i>¿Quiénes somos?</a>
+    </li>
+    <li class="_li">
+      <a class="_a" routerLink="factibilidad"><i class="fa-solid fa-people-roof"></i>Factibilidad</a>
+    </li>    
+  </ul>
+  <hr>
+  <ul  class="_ul" *ngIf="estaEnSesion">
+    <li  class="_li">
+      <a class="_a"><i class="fa-solid fa-list-check"></i>Proyectos</a>
+    </li>
+    <ul class="_ul">
+      <li class="_li"><a class="_a" routerLink="BCP">Banco BCP</a></li>
+      <li class="_li"><a class="_a" routerLink="BBVA">Banco BBVA</a></li>
+      <li class="_li"><a class="_a" routerLink="BancoNacion">Banco Nación</a></li>
+    </ul>
+  </ul>
+  <ul  class="_ul" *ngIf="estaEnSesion">
+    <li class="_li">
+      <a class="_a" routerLink="d"><i class="fa-solid fa-clipboard-list"></i>Reportes</a>
+    </li> 
+  </ul>
+</div>
+
+</label>
+
+<main class="container-fluid _main {{_displayed?'pex':''}}">
   <router-outlet></router-outlet>
 </main>
+

@@ -20,7 +20,6 @@ import { SatelitalComponent } from './pages/factibilidad/satelital/satelital.com
 import { BcpComponent } from './pages/proyectos/bcp/bcp.component';
 import { BbvaComponent } from './pages/proyectos/bbva/bbva.component';
 import { BancoNacionComponent } from './pages/proyectos/banco-nacion/banco-nacion.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 
@@ -40,7 +39,6 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     BcpComponent,
     BbvaComponent,
     BancoNacionComponent,
-    DashboardComponent,  
     
   ],
 
