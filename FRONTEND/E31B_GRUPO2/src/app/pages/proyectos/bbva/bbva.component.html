@@ -17,64 +17,74 @@
       <h6>REGISTRO DE SOT</h6>
       <hr>
       <div class="btns">
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
-              Registrar
-            </button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
+          Registrar
+        </button>
       </div>
       <div class="table py-3">
-          <table id="tablaSot" class="hover" style="width:100%">
-              <thead>
-                  <tr>
-                      <th>ID</th>
-                      <th>N° Placa</th>
-                      <th>Marca</th>
-                      <th>Modelo</th>
-                      <th></th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr >
-                      <td>asdasdsd</td>
-                      <td>c.placa </td>
-                      <td>c.marca </td>
-                      <td>c.modelo </td>
-                      <td>
-                       <a class="btn btn-light"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                      </td>
-                  </tr>
-              </tbody>
-              <tfoot>
-                  <tr>
-                      <th>ID</th>
-                      <th>Placa</th>
-                      <th>Marca</th>
-                      <th>Modelo</th>
-                      <th></th>
-                  </tr>
-              </tfoot>
-          </table>
+        <table id="tablaSot" class="hover" style="width:100%">
+          <thead>
+            <tr>
+              <th>SOT</th>
+              <th>Fecha</th>
+              <th>Proyecto</th>
+              <th>Analista</th>
+              <th>Cliente</th>
+              <th>Sede</th>
+              <th>Estado</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let x of servicioList">
+              <td>{{x.SOT}}</td>
+              <td>{{x.Fecha|date}}</td>
+              <td>{{x.Proyecto}}</td>
+              <td>{{x.Analista}}</td>
+              <td>{{x.Cliente}} </td>
+              <td>{{x.Sede}} </td>
+              <td>{{x.Estado}} </td>
+              <td>
+                <a class="btn btn-light"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>SOT</th>
+              <th>Fecha</th>
+              <th>Proyecto</th>
+              <th>Analista</th>
+              <th>Cliente</th>
+              <th>Sede</th>
+              <th>Estado</th>
+              <th></th>
+            </tr>
+          </tfoot>
+        </table>
       </div>
     </div>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-danger">Understood</button>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger">Understood</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </div>
