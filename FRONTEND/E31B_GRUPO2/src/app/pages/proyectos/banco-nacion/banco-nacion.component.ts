@@ -19,18 +19,20 @@ export class BancoNacionComponent implements OnInit {
     private readonly consultaServicio:ConsultasService) { }
 
 
-    cargarListado(){
-      this.proyectoServicio.__getServiciosPorProyecto("BANCO DE LA NACION").subscribe((rest:any)=>{
+    cargarListado(cliente:string){
+      this.proyectoServicio.__getServiciosPorProyecto(cliente).subscribe((rest:any)=>{
         if(rest.issuccess){
           this.servicioList=rest.data;
-          console.log(rest.data);
+        //  console.log(rest.data);
+
+         
         }
       })
      }
   
   
     ngOnInit(): void {
-      this.cargarListado();
+      this.cargarListado("BANCO DE LA NACION");
     }
   }
   
