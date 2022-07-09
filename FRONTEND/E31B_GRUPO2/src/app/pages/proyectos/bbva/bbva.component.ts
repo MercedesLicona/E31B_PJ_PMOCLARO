@@ -7,19 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BbvaComponent implements OnInit {
   sub_menu: any;
-  isSgaShown: boolean = true;
-  isSotShown: boolean = false;
   constructor() { }
 
-  showSga(){
-    this.isSgaShown = true;
-    this.isSotShown = false;
-   }
-   showSot(){
-    this.isSotShown = true;
-    this.isSgaShown = false;
-   }
-   
+
   ngOnInit(): void {
   }
 
