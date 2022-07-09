@@ -35,7 +35,7 @@ namespace UPC.APIBusiness.DBContext.Repository
                         response.issuccess = true; 
                         response.errorcode = "0000";
                         response.errormessage = string.Empty;
-                        response.data = objeto;
+                        response.data = objeto.ToList();
                     }
                     else
                     {
