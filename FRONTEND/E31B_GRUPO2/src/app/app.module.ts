@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from "@angular/forms";
+import { DataTablesModule } from 'angular-datatables';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -46,7 +47,8 @@ import { BancoNacionComponent } from './pages/proyectos/banco-nacion/banco-nacio
    BrowserModule,
    AppRoutingModule,
    ReactiveFormsModule,
-   HttpClientModule
+   HttpClientModule,
+   DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

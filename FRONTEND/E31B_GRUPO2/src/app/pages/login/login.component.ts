@@ -23,36 +23,36 @@ export class LoginComponent implements OnInit {
   });
 
   iniciarSesion() {
-    // if (this.loginForm.valid) {
-    //   this.userService.__getLogin(this.loginForm.value).subscribe((rest: any) => {
-    //     if (rest.issuccess) {
-    //       console.log(rest.data);
-    //       sessionStorage.setItem('token', JSON.stringify(rest.data));
-    //       window.location.href = "/bcp";
-    //     } else {
-    //       alert(" Usuario o contraseña inválida!");
-    //     }
-    //   });
-    // }else{
-    //   alert("No se ha encontrado las credenciales de acceso!");
-    // }
+    if (this.loginForm.valid) {
+      this.userService.__getLogin(this.loginForm.value).subscribe((rest: any) => {
+        if (rest.issuccess) {
+          //console.log(rest.data);
+          sessionStorage.setItem('token', JSON.stringify(rest.data));
+          window.location.href = "/BCP";
+        } else {
+          alert(" Usuario o contraseña inválida!");
+        }
+      });
+    }else{
+      alert("No se ha encontrado las credenciales de acceso!");
+    }
   
 
 
-    let x = 0;
-    if (this.loginForm.get('user')?.value == "admin") {
-      if (this.loginForm.get('password')?.value == "123456") {
-        x = 1;
-      }
-    }
+    // let x = 0;
+    // if (this.loginForm.get('user')?.value == "admin") {
+    //   if (this.loginForm.get('password')?.value == "123456") {
+    //     x = 1;
+    //   }
+    // }
 
-    if (x > 0) {
-      sessionStorage.setItem('token', 'Mercedes');
-      this .router.navigate(["BCP"]);
-      // window.location.href = "/bcp";
-    } else {
-      sessionStorage.removeItem('token');
-    }
+    // if (x > 0) {
+    //   sessionStorage.setItem('token', 'Mercedes');
+    //   this .router.navigate(["BCP"]);
+    //   // window.location.href = "/bcp";
+    // } else {
+    //   sessionStorage.removeItem('token');
+    // }
   }
 
   ngOnInit(): void {

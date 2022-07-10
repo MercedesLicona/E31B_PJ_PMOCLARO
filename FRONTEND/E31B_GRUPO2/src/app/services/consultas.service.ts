@@ -9,6 +9,6 @@ export class ConsultasService {
   constructor(private readonly http: HttpClient) { }
 
   __getEntidades(opcion:number){
-    return this.http.get<any>('http://localhost:5000/api/Consulta/ConsultaVarios?opcion='+opcion);
+    return this.http.get<any>('https://localhost:5001/api/Consulta/ConsultaVarios?opcion='+opcion);
   }
 }
