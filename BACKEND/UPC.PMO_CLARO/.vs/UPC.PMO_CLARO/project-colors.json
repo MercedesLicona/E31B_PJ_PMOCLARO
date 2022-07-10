@@ -5,7 +5,17 @@
       "ProjectGuid": "da04ad91-146c-47ac-8bfc-00d9cdb6e709",
       "DisplayName": "UPC.APIBusiness.API",
       "ColorIndex": 0
+    },
+    "29039c3b-4c7f-4a16-9315-c2eb7923047a": {
+      "ProjectGuid": "29039c3b-4c7f-4a16-9315-c2eb7923047a",
+      "DisplayName": "UPC.APIBusiness.DBContext",
+      "ColorIndex": 1
+    },
+    "00f135a7-890d-46a6-b27a-fb1381c6d0e3": {
+      "ProjectGuid": "00f135a7-890d-46a6-b27a-fb1381c6d0e3",
+      "DisplayName": "UPC.APIBusiness.DBEntity",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

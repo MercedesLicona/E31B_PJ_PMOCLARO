@@ -22,7 +22,7 @@
         </button>
       </div>
       <div class="table py-3">
-        <table id="tablaSot" class="hover" style="width:100%">
+        <table datatable [dtOptions]="dtOptions" id="tablaSot" class="hover" style="width:100%">
           <thead>
             <tr>
               <th>SOT</th>
@@ -53,23 +53,58 @@
       </div>
     </div>
 
+
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <h5 class="modal-title" id="staticBackdropLabel">Registrar Servicio T. BCP</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            ...
+
+          <div [formGroup]="formularioRegistro" class="modal-body">   
+            <div class="mb-3">
+              <div class="form-group">
+                <label for="idCliente">Seleccionar datos del Cliente</label>
+                <select class="form-control" id="idCliente" formControlName="idCliente" >
+                  <option *ngFor="let c of clienteList" value="{{c.id}}">{{c.descripcion}}</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="form-group">
+                <label for="idProyecto">Seleccionar Proyecto</label>
+                <select class="form-control" id="idProyecto" formControlName="idProyecto" >
+                  <option *ngFor="let c of proyectoList" value="{{c.id}}">{{c.descripcion}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-group">
+                <label for="idSede">Seleccionar SEDE</label>
+                <select class="form-control" id="idSede" formControlName="idSede" >
+                  <option *ngFor="let c of sedeList" value="{{c.id}}">{{c.descripcion}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-group">
+                <label for="idTipoServicio">Seleccionar el Tipo de Servicio</label>
+                <select class="form-control" id="idTipoServicio" formControlName="idTipoServicio" >
+                  <option *ngFor="let c of tipoServicioList" value="{{c.id}}">{{c.descripcion}}</option>
+                </select>
+              </div>
+            </div>
           </div>
+
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-danger">Understood</button>
+            <button (click)="guaradarSolicitud()" type="button" class="btn btn-danger">Guardar Solicitud</button>
           </div>
         </div>
       </div>
